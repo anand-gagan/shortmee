@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#343a40">
+<link rel="icon" href="http://d32gpxwz47f86d.cloudfront.net/wp-content/uploads/2014/03/Goo.gl-URL-Shortener-Logo-150x150.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arima+Madurai" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Akronim" rel="stylesheet">
+    
+<link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    
+    <style>
+    #heading{
+      margin:40px;
+      margin-bottom:70px;
+        font-family: 'Permanent Marker';
+     font-size: 65px;   
+     
+    }
+    navbut{
+      float:right;
+     font-family: 'Cookie', cursive;
+     font-size: 35px;   
+    }
+    #signature{
+     
+    left: 0;
+    bottom: 0;
+    right:0;
+position: fixed;
+    width: 100%;
+   background-color: #212121;
+    text-align: center;
+    color:white;
+    padding:10px;
+    z-index:100;
+    }
+    logo{
+  font-family: 'Cookie', cursive;
+  font-size:50px;
+ font
+    }
+  </style>
+    <title>Shortmee - URL shortener</title>
+  </head>
+  <body>
+<nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand" href="#"><logo>>> Short.mee <<</logo></a>
+  
+  <navbut>
+  <button type="button" class="btn btn-dark"><navbut>Home</navbut></button>
+  <button type="button" class="btn btn-dark"><navbut>About Us</navbut></button>
+</nav></navbut>
+  <div class="row no-gutters" id="main-div">
+      
+      <div class="col-3"></div>
+      <div class="col-md-6 ">
+        <h1 class="text-center" id="heading">Shorten your URL</h1>
+      
+
+      <!-- Form -->
+      <div class="container">
+        
+        <form id="shortform">
+          <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text"><i class="fas fa-hand-point-right"></i></div>
+            </div>
+            <input type="url" class="form-control" id="url" placeholder="URL (must starts with http:// or https://)" value="" autofocus>
+            <div class="input-group-append">
+              <button type="submit" class="btn btn-success" id="button"><i class="fas fa-link"></i> &nbsp;Shorten</button>
+            </div>
+          </div>
+          <span id="valid" aria-hidden="true"></span>
+
+          <br>
+
+          <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text">https://shortme.herokuapp.com/</div>
+            </div>
+            <input type="text" class="form-control" id="key" placeholder="(Optional) Provide Custom URL" value="">
+          </div>
+          <span id="check" aria-hidden="true"></span>
+          
+          <br>
+
+        </form>
+
+        <div id="result"></div>
+      </div>
+      <br><br><br>
+    </div>
+    <div class="col-3">
+      <br>
+    </div>
+</div>
+        <!-- Footer -->
+    <div class="row no-gutters "  id="signature">
+      <div class="col-md-12 text-center signature">
+        <div ><span id="copyright">&copy; 2018, Short me</span> <span id="creator">A URL Shortener by: Gagan Anand &amp; Nitin Pahwa</span></div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" >
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+       <script src="init.js"></script>
+  </body>
+</html>
